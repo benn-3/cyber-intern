@@ -4,73 +4,120 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sri Eshwar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f8fa;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f7fc;
       color: #002147;
+      line-height: 1.6;
     }
 
     header {
       text-align: center;
-      padding: 30px 20px 10px;
-      background-color: white;
+      padding: 40px 20px 20px;
+      background: linear-gradient(135deg, #004aad, #00c4ff);
+      color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .logo {
-      max-width: 150px;
+      max-width: 130px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 10px 0 5px;
     }
 
     .tagline {
-      font-size: 1.1rem;
-      color: #444;
-      margin-top: -10px;
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #e0f3ff;
     }
 
     nav {
       background-color: #002147;
-      padding: 10px 0;
+      padding: 12px 0;
     }
 
     nav ul {
       display: flex;
       justify-content: center;
+      gap: 40px;
       list-style: none;
-      padding-left: 0;
-      margin: 0;
-    }
-
-    nav ul li {
-      margin: 0 20px;
     }
 
     nav a {
       color: white;
+      font-weight: 600;
       text-decoration: none;
-      font-weight: bold;
+      transition: color 0.3s;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #00c4ff;
     }
 
     main {
-      padding: 40px 20px;
-      text-align: center;
+      padding: 50px 20px;
+      display: flex;
+      justify-content: center;
     }
 
     .about {
-      max-width: 700px;
-      margin: auto;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      padding: 40px;
+      max-width: 800px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .about:hover {
+      transform: translateY(-5px);
+    }
+
+    .about h2 {
+      color: #004aad;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    .about p {
+      font-size: 1rem;
+      color: #333;
     }
 
     footer {
       background-color: #002147;
       color: white;
       text-align: center;
-      padding: 15px 10px;
-      margin-top: 40px;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      .about {
+        padding: 25px;
+      }
     }
   </style>
 </head>
@@ -93,7 +140,7 @@
   <main>
     <section class="about">
       <h2>About Sri Eshwar</h2>
-      <p>Sri Eshwar College of Engineering is committed to leadership and excellence in education. We empower students with the knowledge and values needed to lead in the world of tomorrow.</p>
+      <p>Sri Eshwar College of Engineering is committed to <strong>leadership</strong> and <strong>excellence</strong> in education. We empower students with knowledge, innovation, and values to shape the world of tomorrow.</p>
     </section>
   </main>
 
